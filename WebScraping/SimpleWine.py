@@ -84,3 +84,26 @@ class SimpleWineParser:
 
         return wines
 
+    def save_to_csv(self, data, filename='SimpleWine'):
+        header = list(data[0].keys())
+
+        with open(filename, 'w', newline='', encoding='utf-8') as csv_file:
+            writer = csv.DictWriter(csv_file, fieldnames=header)
+            writer.writeheader()
+            writer.writerows(data)
+
+    def parser(self, num_pages=4):
+        html = self.get_html(self.url)
+        if html.status_code == 200:
+            wines_data = []
+            for page in range(1, num_pages + 1):
+                html = self.get_html(self.url, params={'page': page})
+                wines_data.extend(self.get_content(html))
+                time.sleep(10)
+                self.save_to_csv(wines_data, 'SimpleWine.csv')
+        else:
+            print('Error')
+
+# Instantiate the class and run the parser
+wine_parser = SimpleWineParser(url=URL, headers=HEADERS)
+wine_parser.parser()
