@@ -66,3 +66,21 @@ class SimpleWineParser:
                 'Number_votes': number_votes,
                 'Price': price_digits
             }
+
+            wine_data.update(description_data)
+
+            item_html = self.get_html(self.host + link_product)
+            if item_html.status_code == 200:
+                item_soup = BeautifulSoup(item_html.text, 'html.parser')
+                larger_image = item_soup.find('picture', class_='product-slider__slide-picture') \
+                    .find('img').get('data-srcset')
+            else:
+                larger_image = None
+
+            wine_data['Larger_Image'] = larger_image
+
+            wines.append(wine_data)
+            time.sleep(3)
+
+        return wines
+
