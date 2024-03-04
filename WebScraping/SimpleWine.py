@@ -51,3 +51,18 @@ class SimpleWineParser:
 
             price_div = item.find('div', class_='snippet-price__total')
             common_price = item.find('span', class_='snippet-price__total snippet-price__total-black')
+
+            if common_price:
+                price_text = common_price.get_text(strip=True)
+            else:
+                price_text = price_div.get_text(strip=True) if price_div else None
+
+            price_digits = re.sub(r'\D', '', price_text) if price_text else None
+
+            wine_data = {
+                'Title': title,
+                'Link_product': link_product,
+                'Ratings': ratings,
+                'Number_votes': number_votes,
+                'Price': price_digits
+            }
