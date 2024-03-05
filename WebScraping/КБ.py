@@ -29,3 +29,11 @@ class WineScraper:
             age_popup_button.click()
         except Exception as e:
             print(f"Error clicking 'Да': {e}")
+
+    def get_content(self):
+        html_content = self.driver.page_source
+        soup = BeautifulSoup(html_content, 'html.parser')
+
+        items = soup.find_all('div', class_='catalog_product_item_cont')
+        wines = []
+
