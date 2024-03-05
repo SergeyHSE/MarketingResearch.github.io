@@ -61,3 +61,19 @@ class WineScraper:
 
         return wines
 
+    def get_product_details(self, link):
+        self.driver.get(link)
+        time.sleep(3)  # Adding a sleep time before opening the product link
+        html_content = self.driver.page_source
+        soup = BeautifulSoup(html_content, 'html.parser')
+
+        product_chars = soup.find_all('div', class_='pr_card_char_item')
+        details = {}
+
+        for char in product_chars:
+            char_name = char.find('span').get_text(strip=True)
+            char_value = char.find('p').get_text(strip=True)
+            details[char_name] = char_value
+
+        return details
+
