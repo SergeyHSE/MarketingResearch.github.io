@@ -77,3 +77,17 @@ class WineScraper:
 
         return details
 
+    def save_to_csv(self, data, filename='KB.csv'):
+        all_keys = set()
+        for row in data:
+            all_keys.update(row.keys())
+
+        fieldnames = ['Link_product', 'Number_votes', 'Image', 'Price'] + list(all_keys)
+
+        with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+            writer.writeheader()
+            for row in data:
+                writer.writerow(row)
+
