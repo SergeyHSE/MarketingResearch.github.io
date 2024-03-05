@@ -91,3 +91,23 @@ class WineScraper:
             for row in data:
                 writer.writerow(row)
 
+    def scrape(self, url):
+        self.driver.get(url)
+        self.handle_age_popup()
+        self.driver.refresh()
+        wines_data = self.get_content()
+
+        for wine in wines_data:
+            link = wine['Link_product']
+            if link:
+                details = self.get_product_details(link)
+                wine.update(details)
+
+        self.save_to_csv(wines_data)
+        self.close_driver()
+
+if __name__ == "__main__":
+    url = "https://krasnoeibeloe.ru/catalog/vino/?form_id=catalog_filter_form&arrFilter_100_MIN=0.37&arrFilter_100_MAX=1&filter_search=&arrFilter_101_2989936755=Y&filter_search=&arrFilter_103_MIN=8&arrFilter_103_MAX=19&filter_search=&filter_search=&set_filter=Y&set_filter=Y"
+    scraper = WineScraper()
+    scraper.scrape(url)
+
