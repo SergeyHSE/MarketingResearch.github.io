@@ -37,3 +37,27 @@ class WineScraper:
         items = soup.find_all('div', class_='catalog_product_item_cont')
         wines = []
 
+        for item in items:
+            link_product_element = item.find('div', itemprop='name')
+            link_product = link_product_element.find('a').get('href') if link_product_element else None
+            full_link_product = self.BASE_URL + link_product if link_product else None
+
+            image = item.find('div', class_='product_item_images').find('img').get('src')
+
+            price_element = item.find('div', class_='product_item__price_c')
+            price = price_element.find('div', itemprop='price').get_text(strip=True) if price_element else None
+
+            rating_div = item.find('div', class_='rate_votes')
+            number_votes = rating_div.get_text(strip=True) if rating_div else None
+
+            wine_data = {
+                'Link_product': full_link_product,
+                'Number_votes': number_votes,
+                'Image': image,
+                'Price': price
+            }
+
+            wines.append(wine_data)
+
+        return wines
+
