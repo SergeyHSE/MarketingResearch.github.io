@@ -79,3 +79,37 @@ def save_to_csv(data, filename='WineStyle'):
             filtered_row = {key: row[key] for key in header if key in row}
             writer.writerow(filtered_row)
 
+def parser():
+    base_url = 'https://winestyle.ru/wine/south-africa/'
+    
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
+        'Upgrade-Insecure-Requests': '1',
+    }
+
+    session = requests.Session()
+    session.headers.update(headers)
+
+    wines_data = []
+    count = 0
+    for page in range(1, 23):  
+        url = f'{base_url}?page={page}'
+        response = session.get(url)
+
+        if response.status_code == 200:
+            wines_data.extend(get_content(response))
+            count += 1
+            if count % 2 == 0:
+                time.sleep(30)
+            else:
+                time.sleep(60)
+
+        else:
+            print(f'Error on page {page}. Status code: {response.status_code}')
+
+    save_to_csv(wines_data, 'WineStyle.csv')
+        
+parser()
