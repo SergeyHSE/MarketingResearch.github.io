@@ -41,3 +41,23 @@ def get_content(html):
         
         volume_element = item.find('span', class_='volume-block__title')
         volume_text = volume_element.next_sibling.string.strip()
+
+        # Combine all extracted data into a single dictionary
+        wine_data = {
+            'Title': title,
+            'Link_product': link_product,
+            'Ratings': ratings,
+            'Number_votes': number_votes,
+            'Image': image,
+            'Price': price_digits,
+            'Объем' : volume_text
+ 
+        }
+
+        # Add the description data to the wine_data dictionary
+        wine_data.update(description_data)
+
+        wines.append(wine_data)
+
+    return wines
+
