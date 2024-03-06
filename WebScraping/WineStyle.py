@@ -61,3 +61,21 @@ def get_content(html):
 
     return wines
 
+def save_to_csv(data, filename='WineStyle'):
+    if not data:
+        print("No data to save.")
+        return
+
+    # Extract the header from the first dictionary in the list
+    header = list(data[0].keys())
+
+    # Write the data to the CSV file
+    with open(filename, 'w', newline='', encoding='utf-8') as csv_file:
+        writer = csv.DictWriter(csv_file, fieldnames=header)
+        writer.writeheader()
+
+        for row in data:
+            # Filter out keys that are not present in the header
+            filtered_row = {key: row[key] for key in header if key in row}
+            writer.writerow(filtered_row)
+
