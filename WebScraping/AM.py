@@ -55,4 +55,30 @@ def handle_age_confirmation(driver):
 
     return additional_info
 
+def get_content(html, driver):
+    soup = BeautifulSoup(html, 'html.parser')
+    items = soup.find_all('div', class_='catalog-list-item__container')
+    wines = []
+
+    for item in items:
+        title_element = item.select_one('.catalog-list-item__title.js-product-detail-link')
+        title = title_element.get_text(strip=True)
+
+        link_product = item.find('div', class_='catalog-list-item__info').find('a').get('href')
+        image = item.find('a', class_='catalog-list-item__image js-product-detail-link').find('img').get('data-src')
+
+        rating_div = item.find('div', class_='product-rating-new')
+        ratings = rating_div.find('span', class_='product-rating__rating').get_text(strip=True) if rating_div and rating_div.find('span', class_='product-rating__rating') else None
+        number_votes_raw = rating_div.find('a', class_='product-rating__text').get_text(strip=True) if rating_div and rating_div.find('a', class_='product-rating__text') else None
+
+        # Extract numeric values from 'Number_votes'
+        number_votes = float(''.join(filter(str.isdigit, number_votes_raw))) if number_votes_raw else None
+
+        # Extract numeric values from 'Price'
+        price_raw_element = item.find('span', class_='middle_price')
+        price_digits = float(''.join(filter(lambda x: x.isdigit() or x == '.', price_raw_element.get_text(strip=True)))) if price_raw_element else None
+
+        # Get additional information from the product page using Selenium
+        additional_info = get_additional_info_selenium(HOST + link_product, driver)
+
 
