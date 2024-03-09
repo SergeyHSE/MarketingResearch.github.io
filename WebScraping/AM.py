@@ -104,4 +104,34 @@ def save_to_csv(data, filename='AM'):
         writer.writeheader()
         writer.writerows(data)
 
+def parser():
+    options = Options()
+    options.headless = True
+    driver = webdriver.Chrome(options=options)
+
+    wines_data = []
+
+    dynamic_html = get_dynamic_content_selenium(URL + '?page=1', driver)
+    wines_data.extend(get_content(dynamic_html, driver))
+
+    for wine_data in wines_data:
+        product_link = wine_data['Link_product']
+        additional_info = get_additional_info_selenium(HOST + product_link, driver)
+        wine_data['Additional_Info'] = additional_info
+
+        time.sleep(1)
+
+    time.sleep(2)
+
+    if wines_data:
+        try:
+            save_to_csv(wines_data, 'AM1.csv')
+            print('Data saved successfully.')
+        except Exception as e:
+            print(f"Error during data processing: {e}")
+    else:
+        print('No data to save.')
+
+parser()
+
 
