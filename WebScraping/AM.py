@@ -34,4 +34,25 @@ def handle_age_confirmation(driver):
     except Exception as e:
         print(f"Error handling age confirmation: {e}")
 
-  
+  def get_additional_info_selenium(product_url, driver):
+    additional_info = {}
+
+    # Wait for the dynamic content to load (you may need to adjust the wait time)
+    time.sleep(2)
+
+    # Get the HTML after JavaScript has modified the content
+    driver.get(product_url)
+    product_html = driver.page_source
+
+    product_soup = BeautifulSoup(product_html, 'html.parser')
+    about_wine_params = product_soup.find_all('div', class_='about-wine__param')
+
+    for param in about_wine_params:
+        title = param.find('span', class_='about-wine__param-title').get_text(strip=True)
+        value = param.find('span', class_='about-wine__param-value').get_text(strip=True)
+        
+        additional_info[title] = value
+
+    return additional_info
+
+
