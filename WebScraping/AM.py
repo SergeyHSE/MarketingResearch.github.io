@@ -96,4 +96,12 @@ def get_content(html, driver):
 
     return wines
 
+def save_to_csv(data, filename='AM'):
+    header = list(data[0].keys())
+
+    with open(filename, 'w', newline='', encoding='utf-8') as csv_file:
+        writer = csv.DictWriter(csv_file, fieldnames=header)
+        writer.writeheader()
+        writer.writerows(data)
+
 
