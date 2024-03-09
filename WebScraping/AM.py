@@ -81,4 +81,19 @@ def get_content(html, driver):
         # Get additional information from the product page using Selenium
         additional_info = get_additional_info_selenium(HOST + link_product, driver)
 
+        # Include additional information in wine_data
+        wine_data = {
+            'Title': title,
+            'Link_product': link_product,
+            'Number_votes': number_votes,
+            'Image': image,
+            'Ratings': ratings,
+            'Price': price_digits,
+            'Additional_Info': additional_info
+        }
+
+        wines.append(wine_data)
+
+    return wines
+
 
