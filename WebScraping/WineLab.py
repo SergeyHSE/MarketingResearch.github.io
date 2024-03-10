@@ -42,3 +42,20 @@ with open(csv_path_combined, 'w', newline='', encoding='utf-8') as csvfile_combi
     writer_combined = csv.writer(csvfile_combined)
     writer_combined.writerow(fieldnames)
 
+    # Iterate through each object and save the combined information to the CSV file
+    for obj in combined_data:
+        code = obj['code']
+        name = obj['name']
+        price = obj['price']['value'] if obj.get('price') and obj['price'].get('value') is not None else None
+        rating = round(obj['averageRating'], 2) if obj.get('averageRating') is not None else None
+        num_reviews = obj.get('numberOfReviews', None)  # Check if 'numberOfReviews' key exists
+        image_url = obj['images'][0]['url'] if obj.get('images') else None  # Check if 'images' key exists
+        product_url = obj.get('url', None)
+        alcohol_content = obj.get('alcoholContent', None)
+
+        # Add the base URL to alcohol content
+        full_product_url = f"https://www.winelab.ru/catalog/vino/ct_ZA {product_url}" if alcohol_content else None
+
+        # Write the row to the CSV file
+        writer_combined.writerow([code, name, price, rating, num_reviews, image_url, full_product_url, alcohol_content])
+
