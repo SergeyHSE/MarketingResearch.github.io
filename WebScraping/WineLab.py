@@ -36,3 +36,9 @@ combined_data = parsed_data_page1 + parsed_data_page2
 # Specify the path to save the combined CSV file
 csv_path_combined = r"C:\Users\User\WineLab_data.csv"
 
+# Open the CSV file in write mode and write the header
+with open(csv_path_combined, 'w', newline='', encoding='utf-8') as csvfile_combined:
+    fieldnames = ['code', 'name', 'price', 'rating', 'num_reviews', 'image_url', 'full_product_url', 'alcohol_content']
+    writer_combined = csv.writer(csvfile_combined)
+    writer_combined.writerow(fieldnames)
+
