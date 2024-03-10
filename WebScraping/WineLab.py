@@ -30,3 +30,9 @@ with open(path_page2, 'r', encoding='utf-8') as file_page2:
         print(f"Error decoding JSON from page 2: {e}")
 
   
+# Combine data from both pages
+combined_data = parsed_data_page1 + parsed_data_page2
+
+# Specify the path to save the combined CSV file
+csv_path_combined = r"C:\Users\User\WineLab_data.csv"
+
