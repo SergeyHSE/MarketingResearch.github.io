@@ -31,5 +31,21 @@ Define the most appropriate segment of the wine product from South Africa on Mos
 
 ![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/0ff9c57e-0870-4f45-9e7e-e06bd2ae09dd)
 
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/664b541e-28d6-4404-a3c0-1ac9203b9ba1)
+
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/4edd0596-4261-41db-a6f2-e521084a95f3)
+
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/d6c1e9e2-b607-4be2-a054-49876c3e0c34)
+
+Источники:
+ 1. Федеральный закон от 27.12.2019 N 468-ФЗ (ред. от 19.10.2023) "О виноградарстве и виноделии в Российской Федерации“ 
+2. Налоговый кодекс РФ (п. 4, ст. 164 «Налоговые ставки»)
+3. Налоговый кодекс РФ (п. 11, 13, 14, 16 - ст.193 «Налоговые ставки»)
+4. Федеральная служба по контролю за алкогольным и табачным рынками, п. 4
+5. Решение Совета Евразийской экономической комиссии от 14.09.2021 N 80 (ред. от 27.12.2023) "Об утверждении единой Товарной номенклатуры внешнеэкономической деятельности Евразийского экономического союза и Единого таможенного тарифа Евразийского экономического союза, а также об изменении и признании утратившими силу некоторых решений Совета Евразийской экономической комиссии" (с изм. и доп., вступ. в силу с 08.02.2024)
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/b86bb1ab-b265-4312-a9ba-369701109f2d)
+
+
+
 
 
