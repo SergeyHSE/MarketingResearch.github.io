@@ -9,7 +9,7 @@ Define the most appropriate segment of the wine product from South Africa on Mos
 5. Analyze the data.
 6. Make concludion.
 
-# General tendentions on the wine market in Russia
+# 1. General tendentions on the wine market in Russia
 
 ![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/72c270f3-8809-42bf-ae47-3b5caafd61ad)
 
