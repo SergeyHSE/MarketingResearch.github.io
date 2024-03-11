@@ -17,3 +17,7 @@ Define the most appropriate segment of the wine product from South Africa on Mos
 
 ![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/9d356359-22fe-4dfe-832a-cb8ea6ad17e5)
 
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/39773876-d265-4180-a1e3-3a9dccfa211b)
+
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/b7c0165f-341f-4940-b86f-aad76d4bd253)
+
