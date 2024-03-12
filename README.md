@@ -78,6 +78,15 @@ Define the most appropriate segment of the wine product from South Africa on Mos
 ![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/c336c239-7181-4457-a785-52f73a2dc53a)
 Красное вино ценится чуть выше в среднем и низком ценовом сегменте. В высоком сегменте выше разница в средней цене за бутылку в зависимости от цвета.
 
+# 8. Sugar
+
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/71d5de45-b484-4c04-b863-01c65fe79c01)
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/453bc778-f5b5-4e52-8c8d-2aee21631551)
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/b016ac57-eb97-4291-aa88-f7cf1cddcba9)
+Чем выше сегмент, тем выше разнообразие.
+Сухое вино цениться выше, при этом полусухое ниже, чем полусладкое и сладкое.
+
+
 
 
 
