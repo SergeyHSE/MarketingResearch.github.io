@@ -64,6 +64,12 @@ Define the most appropriate segment of the wine product from South Africa on Mos
 ![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/e3e62b3c-5300-461f-a9e1-d260b1eb0c28)
 ![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/6b256623-d76d-4e24-80a4-f598d08d38e2)
 
+# 6. Prices
+
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/6d58a654-02a8-42d7-b802-1ecb8cb6add9)
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/0987b2b5-bc02-46bf-8a93-6a37d946bc3a)
+
+Видно сильное различие между высоким ценовым сегментом и средним и низким ценовыми сегментами. При этом разница между низким и высокими ценовыми сегментами не столь существенна. Низкий ценовой сегмент используют тактику объёмных продаж узкой линейки товаров менее качественной продукции. Средний ценовой сегмент делает ставку на балансе между ценой и качеством, а также линейкой товаров. Высокий ценовой сегмент – это качество и широкая линейка продукции.
 
 
 
