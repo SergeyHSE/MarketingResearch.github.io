@@ -48,5 +48,6 @@ Define the most appropriate segment of the wine product from South Africa on Mos
 
 ![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/9bae380c-1f2a-4c29-b9db-58eaca16ec4c)
 
-
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/e3324032-c483-4b71-9246-0612c9aac368)
+Чем выше ценовой сегмент рынка вина, тем шире линейка товаров, то есть магазины используют разную стратегию продаж.
 
