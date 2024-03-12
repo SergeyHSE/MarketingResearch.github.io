@@ -86,7 +86,10 @@ Define the most appropriate segment of the wine product from South Africa on Mos
 Чем выше сегмент, тем выше разнообразие.
 Сухое вино цениться выше, при этом полусухое ниже, чем полусладкое и сладкое.
 
+# 9. Grape variety
 
-
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/ab50963b-b3f1-4621-9abf-d418d2a16d85)
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/9b7b5197-780b-4f22-a721-20c3f79d61b4)
+Пинотаж наиболее популярен и является визитной карточкой Южной Африки. 
 
 
