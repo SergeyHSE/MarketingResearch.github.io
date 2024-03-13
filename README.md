@@ -99,3 +99,13 @@ Define the most appropriate segment of the wine product from South Africa on Mos
 ![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/f16728f7-f858-47a5-90c7-5f826c7f6b47)
 Ценятся более редкие сорта: гренаш, шираз. Хотя в среднем сегменте разница отсутсвует. Мерло ценится наименее всего. 
 
+# 11. Type of stopper
+
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/f69c5153-952d-4347-a80e-7daae1466571)
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/2f4cb387-aa0e-4b8a-92e5-68185676b399)
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/e88db922-4b18-4c2e-baeb-529f135aa307)
+В среднем ценовом сегменте вид воска не столь важен, как высоком. Меньше всего ценится винтовая пробка, при этом разница между винтовой и натуральной пробками не так очевидна в низком сегменте
+
+
+
+
