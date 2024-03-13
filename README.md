@@ -113,13 +113,18 @@ Define the most appropriate segment of the wine product from South Africa on Mos
 ![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/3de8a878-e555-40a9-a7d7-6661399eaca6)
 В среднем и высоком ценовых сегментах вид этикетки имеет высокое значение.
 
-# 13. shape of bottel
+# 13. Shape of bottel
 
 ![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/9308dfca-fc94-49e8-890f-db7ed477cbe0)
 ![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/c770009f-68b7-4b26-9367-5ce9014c8f36)
 ![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/07e6c387-e762-4691-bb2d-3eb9766cab34)
 В среднем ценовом сегменте прямая форма ценится выше овальной, тогда как в других сегментах ситуация противоположная
 
+# 14. Year of harvest
+
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/01edf57b-3c73-4f81-9f51-4c3dc619f263)
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/055cc918-f911-43d1-bb98-d2a41510ba43)
+Общая тенденция уменьшения цены при увеличении года есть, но не прямолинейная.
 
 
 
