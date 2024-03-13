@@ -106,6 +106,10 @@ Define the most appropriate segment of the wine product from South Africa on Mos
 ![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/e88db922-4b18-4c2e-baeb-529f135aa307)
 В среднем ценовом сегменте вид воска не столь важен, как высоком. Меньше всего ценится винтовая пробка, при этом разница между винтовой и натуральной пробками не так очевидна в низком сегменте
 
+# 12. Label
 
-
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/defb88a4-bfc7-479a-b388-54a5f6df31a6)
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/576b6897-d270-4cb0-b332-c94120da3533)
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/3de8a878-e555-40a9-a7d7-6661399eaca6)
+В среднем и высоком ценовых сегментах вид этикетки имеет высокое значение.
 
