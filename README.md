@@ -92,4 +92,10 @@ Define the most appropriate segment of the wine product from South Africa on Mos
 ![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/9b7b5197-780b-4f22-a721-20c3f79d61b4)
 Пинотаж наиболее популярен и является визитной карточкой Южной Африки. 
 
+# 10. Grape variety and price
+
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/c2cdd4dc-d4a5-4a84-b2b2-c8a3ffeb0a78)
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/4e2e4aeb-0e15-4b85-8f95-6f46bcd8a52a)
+![image](https://github.com/SergeyHSE/MarketingResearch.github.io/assets/139458161/f16728f7-f858-47a5-90c7-5f826c7f6b47)
+Ценятся более редкие сорта: гренаш, шираз. Хотя в среднем сегменте разница отсутсвует. Мерло ценится наименее всего. 
 
